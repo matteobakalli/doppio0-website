@@ -1,0 +1,93 @@
+%!Adobe-FontList 1.24
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AUTHENTICSans-Condensed130
+FamilyName:AUTHENTIC Sans
+StyleName:Condensed 130
+MenuName:AUTHENTIC Sans Condensed 130
+StyleBits:0
+WeightClass:600
+WidthClass:3
+AngleClass:0
+FullName:AUTHENTIC Sans Condensed 130
+WritingScript:Roman
+OutlineFileName:/Users/lucasarti/Library/CloudStorage/GoogleDrive-sarti.luca@gmail.com/Il mio Drive/Passaggio/DOPPIO 0/_menù/Cartella D0_menù_piegh_11/Document fonts/AUTHENTICSans-Condensed-130.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:14364
+FileModTime:607148066
+NameArray:0,Mac,4,AUTHENTIC Sans Condensed 130
+NameArray:0,Win,1,AUTHENTIC Sans Condensed 130
+NameArray:0,Win,16,AUTHENTIC Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AUTHENTICSans-Condensed150
+FamilyName:AUTHENTIC Sans
+StyleName:Condensed 150
+MenuName:AUTHENTIC Sans Condensed 150
+StyleBits:0
+WeightClass:700
+WidthClass:3
+AngleClass:0
+FullName:AUTHENTIC Sans Condensed 150
+WritingScript:Roman
+OutlineFileName:/Users/lucasarti/Library/CloudStorage/GoogleDrive-sarti.luca@gmail.com/Il mio Drive/Passaggio/DOPPIO 0/_menù/Cartella D0_menù_piegh_11/Document fonts/AUTHENTICSans-Condensed-150.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:14996
+FileModTime:607148066
+NameArray:0,Mac,4,AUTHENTIC Sans Condensed 150
+NameArray:0,Win,1,AUTHENTIC Sans Condensed 150
+NameArray:0,Win,16,AUTHENTIC Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/lucasarti/Library/CloudStorage/GoogleDrive-sarti.luca@gmail.com/Il mio Drive/Passaggio/DOPPIO 0/_menù/Cartella D0_menù_piegh_11/Document fonts/AdobeFnt24.lst
+FileLength:2290
+FileModTime:761660192
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:DINCondensed-Bold
+FamilyName:DIN Condensed
+StyleName:Bold
+MenuName:DIN Condensed
+StyleBits:2
+WeightClass:700
+WidthClass:3
+AngleClass:0
+FullName:DIN Condensed Bold
+WritingScript:Roman
+OutlineFileName:/Users/lucasarti/Library/CloudStorage/GoogleDrive-sarti.luca@gmail.com/Il mio Drive/Passaggio/DOPPIO 0/_menù/Cartella D0_menù_piegh_11/Document fonts/DIN Condensed Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:212040
+FileModTime:758712910
+NameArray:0,Mac,18,DIN Condensed Bold
+NameArray:0,Mac,4,DIN Condensed Bold
+NameArray:0,Win,1,DIN Condensed
+%EndFont
+

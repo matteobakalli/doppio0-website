@@ -1,0 +1,82 @@
+{
+  "pizze_classiche": [
+    {
+      "nome": "Marinara",
+      "ingredienti": "pomodoro, aglio, prezzemolo, olio",
+      "prezzo": "5.50€",
+      "tipo": "rossa"
+    },
+    {
+      "nome": "Margherita",
+      "ingredienti": "pomodoro, mozzarella",
+      "prezzo": "6.00€",
+      "tipo": "rossa"
+    },
+    {
+      "nome": "Napoli",
+      "ingredienti": "pomodoro, mozzarella, acciughe, origano",
+      "prezzo": "7.00€",
+      "tipo": "rossa"
+    },
+    {
+      "nome": "Quattro Formaggi",
+      "ingredienti": "mozzarella, gorgonzola, provola affumicata, grana grattugiato",
+      "prezzo": "8.00€",
+      "tipo": "bianca"
+    },
+    {
+      "nome": "Vegetariana",
+      "ingredienti": "pomodoro, mozzarella, melanzane, zucchine, funghi, radicchio, olive, carciofi",
+      "prezzo": "9.50€",
+      "tipo": "vegetariana"
+    }
+  ],
+  "pizze_speciali": [
+    {
+      "nome": "Contadina",
+      "ingredienti": "mozzarella, pancetta, radicchio, provola affumicata",
+      "prezzo": "8.50€",
+      "tipo": "rossa"
+    },
+    {
+      "nome": "Iron Man",
+      "ingredienti": "pomodoro, mozzarella, salsiccia, spinaci freschi, grana grattugiato",
+      "prezzo": "8.50€",
+      "tipo": "rossa"
+    },
+    {
+      "nome": "Alpina",
+      "ingredienti": "mozzarella, funghi, bresaola, rucola, scaglie di grana, noci",
+      "prezzo": "9.50€",
+      "tipo": "vegetariana"
+    }
+  ],
+  "panozzi": [
+    {
+      "nome": "Americano",
+      "ingredienti": "mozzarella, würstel, patatine",
+      "prezzo": "8.50€",
+      "tipo": "rossa"
+    },
+    {
+      "nome": "Campano",
+      "ingredienti": "mozzarella, salsiccia, friarielli",
+      "prezzo": "9.00€",
+      "tipo": "rossa"
+    }
+  ],
+  "dolci": [
+    {
+      "nome": "Nutella Focaccia",
+      "ingredienti": "focaccia con Nutella, zucchero a velo",
+      "prezzo": "6.50€",
+      "tipo": "dolce"
+    },
+    {
+      "nome": "Nutella + Cocco",
+      "ingredienti": "focaccia con Nutella, cocco, zucchero a velo",
+      "prezzo": "6.50€",
+      "tipo": "dolce"
+    }
+  ]
+}
