@@ -68,7 +68,7 @@ function renderMenu() {
 
 // Mostra il popup di personalizzazione
 export function openCustomizationModal(item) {
-    if (!item) return; // Evita di aprire il pop-up se non c'è un elemento selezionato
+    if (!item) return;
 
     selectedItem = item;
     selectedVariations = [];
@@ -84,6 +84,11 @@ export function openCustomizationModal(item) {
     if (modal) {
         modal.style.display = 'flex';
     }
+
+    // RIMUOVI QUESTA SEZIONE:
+    // setTimeout(() => {
+    //     openCheckoutModal();
+    // }, 2000);
 }
 
 
@@ -210,11 +215,15 @@ export function addToCart(item, quantity, variations) {
 // Modifica `updateCartUI()` per aggiornare subito il numero
 
 export function updateCartUI() {
-    let cart = JSON.parse(localStorage.getItem('cart')) || []; // Carica il carrello
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartCount = document.getElementById('cart-count');
-    if (cartCount) { // Verifica che l'elemento esista (aggiunta questa condizione)
-        cartCount.innerText = cart.length; // Aggiorna il contatore
+    if (cartCount) {
+        cartCount.innerText = cart.length;
     }
+    // RIMUOVI QUESTA SEZIONE:
+    // if (cart.length > 0) {
+    //     openCheckoutModal();
+    // }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
