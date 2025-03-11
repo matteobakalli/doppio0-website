@@ -3,137 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOPPIO 0 Pizzeria - Rimini - Doppio Zero</title>
+    <title>Pizzeria - Menu</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCheckoutModal()">&times;</span>
+            <h2>Il tuo carrello</h2>
+            <div id="checkout-cart-items"></div>
+            <p id="checkout-cart-total"></p>
+            <button id="checkout-button" class="button">Procedi al pagamento</button>
+        </div>
+    </div>
+    
+
+    <script type="module" src="menu.js"></script>
+
+    <script type="module">
+        import { confirmAddToCart, closeCustomizationModal, setupCart, openCustomizationModal, updateCustomizationPrice, closeCheckoutModal } from './menu.js';
+    
+        window.confirmAddToCart = confirmAddToCart;
+        window.closeCustomizationModal = closeCustomizationModal;
+        window.setupCart = setupCart;
+        window.openCustomizationModal = openCustomizationModal;
+        window.updateCustomizationPrice = updateCustomizationPrice;
+        window.closeCheckoutModal = closeCheckoutModal;
+    </script>
+
 </head>
 <body>
+
     <div class="container">
-        <img src="images/logo.png" alt="Logo Pizzeria" class="logo">
+        <button id="cart-button" class="cart-button">🛒 <span id="cart-count">0</span></button>
 
-        <!-- Enfatizzazione degli orari di apertura -->
-        <div class="opening-hours">
-            APERTO TUTTI I GIORNI<br>
-            DALLE <strong>18:30</strong> ALLE <strong>22:30</strong>
-        </div>
-
-        <!-- Numero di telefono -->
-        <div class="phone-number">
-            CHIAMA ORA! <strong>0541 771189</strong>
-        </div>
-
-        <!-- Pulsante per chiamare -->
-        <a href="tel:0541771189" class="button">Chiama Ora</a>
-
-        <!-- Pulsantino Instagram -->
-        <a href="https://www.instagram.com/doppio0.pizzeria/" target="_blank" class="instagram-button">
-            <svg viewBox="0 0 24 24" width="24" height="24" class="instagram-icon">
-                <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm0 1.6c-2.4 0-4.2 1.8-4.2 4.2v8.4c0 2.4 1.8 4.2 4.2 4.2h8.4c2.4 0 4.2-1.8 4.2-4.2V7.8c0-2.4-1.8-4.2-4.2-4.2H7.8zm9.6 2.4a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.6a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8z"/>
-            </svg>
-        </a>
-
-        <!-- Pulsante per lasciare una recensione su Google -->
-        <a href="https://search.google.com/local/writereview?placeid=ChIJixNvX4nDLBMRcMRF_lWdQiw" target="_blank" class="button">Lascia una Recensione</a>
-
-        <!-- Barra di ricerca -->
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Cerca un piatto..." oninput="searchMenu()">
-            <svg viewBox="0 0 24 24" width="24" height="24" class="search-icon">
-                <path fill="currentColor" d="M10 2a8 8 0 105.293 14.707l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
-            </svg>
-        </div>
-
-        <!-- Menu a tendina per le categorie -->
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown()">
-                <svg viewBox="0 0 24 24" width="24" height="24" class="filter-icon">
-                    <path fill="currentColor" d="M10 18v-2h4v2h-4zm-4-5v-2h12v2H6zM3 8V6h18v2H3z"/>
-                </svg>
-                Filtra per Categoria
-            </button>
-            <div class="dropdown-content" id="dropdown-content">
-                <a href="#" onclick="filterMenu('all')">Tutto</a>
-                <a href="#" onclick="filterMenu('classiche')">Pizze Classiche</a>
-                <a href="#" onclick="filterMenu('speciali')">Pizze Speciali</a>
-                <a href="#" onclick="filterMenu('calzoni')">Calzoni</a>
-                <a href="#" onclick="filterMenu('panozzi')">Panozzi</a>
-                <a href="#" onclick="filterMenu('fornarin')">Fornarine</a>
-                <a href="#" onclick="filterMenu('variazioni')">Variazioni</a>
-                <a href="#" onclick="filterMenu('dolci')">Dolci</a>
-            </div>
-        </div>
-        
-        <!-- Sezioni del menu -->
         <div class="menu-section" id="pizze-classiche">
-            <h2>Pizze Classiche</h2>
+            <h2>CLASSICHE</h2>
             <div id="pizze-classiche-list"></div>
-        </div>
-        
-        <div class="menu-section" id="pizze-speciali">
-            <h2>Pizze Speciali</h2>
-            <div id="pizze-speciali-list"></div>
-        </div>
-        
-        <div class="menu-section" id="calzoni">
-            <h2>Calzoni</h2>
-            <div id="calzoni-list"></div>
-        </div>
-        
-        <div class="menu-section" id="panozzi">
-            <h2>Panozzi</h2>
-            <div id="panozzi-list"></div>
-        </div>
-        
-        <div class="menu-section" id="fornarin">
-            <h2>Fornarine</h2>
-            <div id="fornarin-list"></div>
-        </div>
-        
-        <div class="menu-section" id="variazioni">
-            <h2>Variazioni</h2>
-            <div id="variazioni-list"></div>
-        </div>
-        
-        <div class="menu-section" id="dolci">
-            <h2>Dolci</h2>
-            <div id="dolci-list"></div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>📍 Indirizzo: Via Marecchiese, 123, Rimini</p>
-            <p>📞 Telefono: <a href="tel:0541771189">0541 771189</a></p>
-            <p>🕒 Orario di apertura: Tutti i giorni dalle 18:30 alle 22:30</p>
-            <p>© <span id="current-year"></span> Doppio0 Pizzeria. Tutti i diritti riservati.</p>
+    <!-- Modale di personalizzazione -->
+    <div id="customization-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCustomizationModal()">&times;</span>
+            <h2 id="modal-item-name"></h2>
+            <p id="modal-item-price"></p>
+            <label for="quantity-selector">Quantità:</label>
+            <input type="number" id="quantity-selector" min="1" value="1" onchange="updateCustomizationPrice()">
+            <div id="variation-options"></div>
+            <button onclick="confirmAddToCart()" class="button">Aggiungi al carrello</button>
         </div>
-    </footer>
+    </div>
 
-    <script src="menu.js"></script>
-    <script>
-        const currentYear = new Date().getFullYear();
-        document.getElementById('current-year').textContent = currentYear;
-
-        // Funzione per aprire/chiudere il menu a tendina
-        function toggleDropdown() {
-            const dropdownContent = document.getElementById('dropdown-content');
-            dropdownContent.classList.toggle('show');
-        }
-
-        // Chiudi il menu a tendina quando si clicca fuori
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                const dropdownContent = document.getElementById('dropdown-content');
-                if (dropdownContent.classList.contains('show')) {
-                    dropdownContent.classList.remove('show');
-                }
-            }
-        }
-    </script>
 </body>
 </html>

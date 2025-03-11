@@ -330,50 +330,60 @@
   "variazioni": [
     {
       "nome": "Doppio impasto",
+      "ingredienti": "Aggiungi un doppio strato di impasto per una pizza più sostanziosa",
       "prezzo": "1.00€",
       "tipo": "variazione"
     },
     {
       "nome": "Impasti speciali",
+      "ingredienti": "Integrale",
       "prezzo": "1.50€",
       "tipo": "variazione"
     },
     {
-      "nome": "Mozzarella no lattosio",
+      "nome": "Mozzarella senza lattosio",
+      "ingredienti": "Sostituisci la mozzarella tradizionale con mozzarella senza lattosio",
       "prezzo": "2.00€",
       "tipo": "variazione"
     },
     {
-      "nome": "Ingredienti extra (cipolla, cipolla caramellata, capperi, radicchio, patate lesse, olive, peperoni, melanzane, noci, pinoli, rucola, patate fritte, funghi, granella di pistacchio, zucchine, carciofi, spinaci, friarielli, crema di zucca)",
+      "nome": "Ingredienti extra",
+      "ingredienti": "Cipolla, cipolla caramellata, capperi, radicchio, patate lesse, olive, peperoni, melanzane, noci, pinoli, rucola, patate fritte, funghi, granella di pistacchio, zucchine, carciofi, spinaci, friarielli, crema di zucca",
       "prezzo": "1.00€",
       "tipo": "variazione"
     },
     {
-      "nome": "Formaggi extra (mozzarella, ricotta, gorgonzola, stracchino, scamorza affumicata, grana a scaglie / grattugiato, acciughe, pomodorini, pomodorini gialli, pesto di pistacchio, olive taggiasche)",
+      "nome": "Formaggi extra",
+      "ingredienti": "Mozzarella, ricotta, gorgonzola, stracchino, scamorza affumicata, grana a scaglie/grattugiato, acciughe, pomodorini, pomodorini gialli, pesto di pistacchio, olive taggiasche",
       "prezzo": "1.50€",
       "tipo": "variazione"
     },
     {
-      "nome": "Salumi extra (salsiccia, salame piccante, prosciutto cotto, würstel, pancetta, tonno)",
+      "nome": "Salumi extra",
+      "ingredienti": "Salsiccia, salame piccante, prosciutto cotto, würstel, pancetta, tonno",
       "prezzo": "1.50€",
       "tipo": "variazione"
     },
     {
-      "nome": "Ingredienti premium (bufala, porcini, pomodori secchi, prosciutto crudo, speck, bresaola, 'nduja)",
+      "nome": "Ingredienti premium",
+      "ingredienti": "Bufala, funghi porcini, pomodori secchi, prosciutto crudo, speck, bresaola, 'nduja piccante",
       "prezzo": "2.00€",
       "tipo": "variazione"
     },
     {
       "nome": "Burrata",
+      "ingredienti": "Aggiungi burrata fresca per un tocco di cremosità",
       "prezzo": "2.50€",
       "tipo": "variazione"
     },
     {
-      "nome": "Salse (maionese, ketchup), basilico",
+      "nome": "Salse e condimenti",
+      "ingredienti": "Maionese, Ketchup, Basilico Fresco",
       "prezzo": "0.20€",
       "tipo": "variazione"
     }
   ],
+
   "dolci": [
     {
       "nome": "Nutella Focaccia",
@@ -388,39 +398,47 @@
       "tipo": "dolce"
     }
   ],
+
   "bibite": [
     {
       "nome": "Acqua 0.5 lt",
+      "ingredienti": "Acqua naturale o frizzante",
       "prezzo": "1.00€",
       "tipo": "bibita"
     },
     {
       "nome": "Acqua 1.5 lt",
+      "ingredienti": "Acqua naturale o frizzante",
       "prezzo": "2.00€",
       "tipo": "bibita"
     },
     {
-      "nome": "Bibite in lattina 33 cl (Coca Cola, Sprite, Fanta, Thé, birra)",
+      "nome": "Bibite in lattina 33 cl",
+      "ingredienti": "Coca Cola, Sprite, Fanta, Thé, birra",
       "prezzo": "2.00€",
       "tipo": "bibita"
     },
     {
-      "nome": "Bibite in bottiglia 1.5 lt (Coca Cola, Fanta, Sprite)",
+      "nome": "Bibite in bottiglia 1.5 lt",
+      "ingredienti": "Coca Cola, Fanta, Sprite",
       "prezzo": "3.00€",
       "tipo": "bibita"
     },
     {
-      "nome": "Bibite in bottiglia 33 cl (Moretti, Ichnusa)",
+      "nome": "Bibite in bottiglia 33 cl",
+      "ingredienti": "Moretti, Ichnusa",
       "prezzo": "3.00€",
       "tipo": "bibita"
     },
     {
-      "nome": "Bibite in bottiglia 66 cl (Moretti, Ichnusa, Menabrea)",
+      "nome": "Bibite in bottiglia 66 cl",
+      "ingredienti": "Moretti, Ichnusa, Menabrea",
       "prezzo": "3.50€",
       "tipo": "bibita"
     },
     {
-      "nome": "Bibite in bottiglia 50 cl (Franziskaner, Ichnusa non filtrata)",
+      "nome": "Bibite in bottiglia 50 cl",
+      "ingredienti": "Franziskaner, Ichnusa non filtrata",
       "prezzo": "3.50€",
       "tipo": "bibita"
     }
